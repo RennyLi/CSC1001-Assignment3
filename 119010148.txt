@@ -1,0 +1,81 @@
+Q1£º
+1. Make a class "Flower"
+2. Initialize each variable to an approprate value
+3. Define methods for setting the value of each type
+4. Define values of retrieving the value of each type
+5. Use main function
+6. Use try except to handle possible inappropriate inputs
+7. Prompt up the user to enter the name of the flower, the number of petals, the price of the flower.
+8. Show the user the flower name, the number of petals and the price.
+
+Sample output:
+Please enter the name of the flower:rose
+Please enter the number of petals:10
+Please enter the price of the flower:20
+The flower name is rose
+The number of petals is 10
+The flower price is 20.0
+
+Q2:
+1. Write a class to conpute the derivative of each single term
+2. Initialize the term of the polynomial
+3. Locate the "^" sign of each term of the polynomial
+(1) If can't find the "^" sign, then the term is constant
+(2) If the term is "x" for example, then return 1
+(3) If the term is "-x" for example, then return -1
+(4) If the power is 1, then return the coeffiecient as the derivative
+4. Save the chosen variable
+5. Get the power of the term
+6. Consider special situations: x^2, -x^2
+7. Calculate the new effiecient
+8. Return the result in appropriate form
+9. Use the function to slice the whole polynomial to single terms
+(1) Save the location of the "+/-" sign
+(2) Avoid saving the first "+/-" sign repeatedly
+(3) Sort the sign index in ascending order
+10. Save all the single terms of the polynomial into one list
+(1) If the polynomial only has two terms: get the terms before and after the sign
+(2) If the polynomial has more than two terms: get the term before the first sign, after the last sign,
+and between the first and last sign
+11. Save derivative of all the terms ino one list, remove "0" terms
+12. If the result starts with "+", eliminate it
+
+Sample output:
+Please input a polynomial in standard algebraic notation:5*x^3+4*x^2+5*x+7
+The first derivative of the polynomial is 15*x^2+8*x+5
+
+Please input a polynomial in standard algebraic notation:-x^3+7*x+9
+The first derivative of the polynomial is -3*x^2+7
+
+Please input a polynomial in standard algebraic notation:x^9+9*x^2+8
+The first derivative of the polynomial is 9*x^8+18*x
+
+Q3:
+1. Import random and shuffle
+2. Initialize different values
+3. Append fish, bear and None to the river list
+4. Randomize the elemnts of the river
+5. Save the location of None element
+6. Get a random move (left, right or stay still)
+(1) Any animal can occupy a "None" location
+(2) If two animals of same type collide, none of them disappear.
+     Create a new instance of the type and place it in a random empty space
+(3) If bear collides fish, then bear occupies fish's location and fish disappears
+(4) If fish collides the bear, bear doesn't change, fish disappears
+7. Save te animal location
+8. In each simulation, the animal takes actions one by one
+9. Print the result
+10. Create an instance
+11. Call main function
+
+Sample output:
+Please enter the initial value of the river length:20
+Please enter the number of fishes:6
+Please enter the number of bears:7
+Please enter the number of steps of the random moving process:6
+NNBNBNFBFNFBFFNBBBNF
+NNNBBFNBFFNBNFBBNBNF
+NNNBNNBBFFNNBBNBNNBN
+NNBNNBNNNNBBBNNNBNBN
+NNNBBNNNNNBBBNNNBBNN
+NNNBBNNNNNBBBNNNBBNN
